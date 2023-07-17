@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="test.css">
+        <style>
+            h1{
+                color : green;
+            }
+            body{
+                background-color: lavenderblush;
+            }
+            .css{
+                color : green;
+            }
+            .html{
+                color :purple;
+            }
+            #css1{
+                color : orange;
+            }
+        </style>
+        <style>
+
+        </style>
+<!--
+    Có 3 dạng css
+    Inline : viết trực tiếp trên dòng
+    Internal : viết trong thẻ style nằm chung file html.
+    -tag name : vd (p, h1, div)
+    -class : đặt class trong tag
+    -id : đặt id trong tag
+    -id tới class - tag
+    External : viết css riêng biệt, liên kết link css
+-----
+content: text của văn bản
+border: viền của thẻ vd( border: 1px solid black)
+margin: tính từ border đẩy ra ngoài
+padding : tính từ border đẩy vào trong
+--nếu viết 1 thuộc tính, sẽ hiểu đẩy 4 hướng
+--nếu viết 2 thuộc tính, sẽ hiểu là trục y và trục x
+--nếu viết 3 thuộc tính, sẽ hiểu là top, trục ngang, bottom
+--nếu viết 4 thuộc tính sẽ hiểu là theo chiều đồng hồ top right bottom left
+--color: màu chữ, có ba cách đặt màu
+c1 : tên màu
+c2 : mã màu hex
+c3 : mã rgp
+text-align : căn chữ(justify; center, right, left : căn như căn dưới nhưng đều hơn, chiều dài, chiều rộng bằng nhau)
+text-decoration : 
+-line: gạch chân chữ ( underline, overline, line-throught, )
+-style : kiểu của border (solid, double, dotted, dashed, wavy)
+text-transform : định dạng chữ(none, capitalize, upper, lower)
+font-family: font chữ
+font-style: kiểu nghiêng ( none, italic)
+font-size: kích thước chữ
+font-weight : độ đậm nhạt chữ(normal, bold, 800, 600 tính theo phần trăm)
+opacity: làm mờ thẻ
+border-radius:6px (làm bo cong thẻ, max 100% or 6px)
+box-shadow: x-offset y-offset blur ( độ mờ) spread ( độ loang) color ( màu) ( box-shadowL 2px, 5px, 0,0, black)
+text-shadow: topOffset left (làm sáng) blur radius color
+background-Image: trộn màu
+linear-gradient : blend màu( location, color1, color2,...) vd: background-Image: linear-gradient(to right, red, blue)
+Radial Gradient : loang màu từ trong ra ngoài
+Conic Gradient : nổi theo hình vuông
+transform : cho phép bạn xoay, chia tỉ lệ, vị trí
+animation : name, duration, timing(tốc độ), delay timing-function
+-->
+
+<style>
+    #transform {
+        margin: 500px;
+        width: 200;
+        height:200;
+        background-color: aqua;
+        transform: width 2s, height 4s;
+    }
+    #transform:hover{
+width: 300px;
+height : 300px;
+    }
+    #transform {
+        border-top-color : purple;
+        animation: loading 1s, linear 2s;
+
+    }
+    @keyframes loading {
+        from{
+            transform: rotate(0deg);
+            transform: rotate(360deg) ;
+        }
+    }
+</style>
+    </head>
+    <body>
+        <div id="transform">
+
+        </div>
+        <h1 style="color: red;"> Xin chào mọi người</h1>
+   <p class="css" id="css1">Css</p>
+   <p>html</p>
+   <div style="width:300px; height:10px; background-color: orangered; border:1px solid; margin:10px">
+Hi, xin chào
+   </div>
+   <p style="color: red; font-family: monospace;">học lập trình; text-align: start;</p>
+   <p style="color: #ff0011; text-align: center; font-size:20px">học lập trình</p>
+   <p style="color: rgb(red, green, blue); text-align: end">học lập trình</p>
+   <a href="" style="text-decoration: none;">kênh 14</a>
+</body>
+</html>
